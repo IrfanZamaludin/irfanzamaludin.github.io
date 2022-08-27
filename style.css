@@ -1,0 +1,163 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: black;
+    color: blanchedalmond;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+li a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+li a:hover {
+    color: blue;
+    transform: rotate(2deg);
+}
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+}
+.logo-title {
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+.logo-img {
+    width: 25px;
+    height: 35px;
+    margin-left: 10px;
+}
+.logo:hover {
+    color: blue;
+    transform: rotate(2deg);
+}
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+.img-foto {
+    width: 100%;s
+    height: auto;
+    padding: 10px;
+    max-width: 500px;
+}
+.parallax {
+    background-image: url(asset/foto/2.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:whitesmoke;
+    color: black;
+    padding: 40px;
+}
+.mt-10 {
+    margin-top: 5px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.card-item {
+    text-align: center;
+    background: white;
+    padding: 24px;
+    color: black;
+    width: 25%;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 5);
+}
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.card-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 4px;
+}
+@media screen and (max-width: 500px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card-item {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .img-foto {
+        padding: 0;
+    }
+    .intro {
+        margin-top: 20px;
+    }
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background: blue;
+}
